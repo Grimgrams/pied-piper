@@ -27,4 +27,24 @@ export const actions: Actions = {
             status: 201
         }
     },
+    removeEntry: async ({ url }) => {
+        const id = url.searchParams.get("id")
+    if (!id){
+        return fail(400, { message: "request is invalid"})
+    }
+    try {
+        await prisma.journal.delete({
+        where:{
+        id: Number(id)
+            }
+        })
+    } catch (err){
+            console.log(err)
+            console.log("Damn some shit went wrong :(")
+            return fail(500, { message: "something went wrong deleting your entry"})
+        }
+    return {
+        status: 200
+    }
+    }
 }

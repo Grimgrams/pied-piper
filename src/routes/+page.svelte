@@ -15,10 +15,13 @@
     <!--
     <div class="">
         <h2>Journal Entries</h2>
-        {#each journal as journal}
+        {#each journals as journal}
         <article>
             <header>{journal.topic}</header>
             <p>{journal.body}</p>
+            <form action="?/removeEntry&id={journal.id}" method="POST">
+                <button type="submit">Remove Entry</button>
+            </form>
         </article>
             {/each}
     </div>
@@ -31,6 +34,8 @@
 
     </form>
 </div>
+
+
 
 <style >
 
