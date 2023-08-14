@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.labele{
+	color: rgb(40, 35, 53);
+	font-weight: 1000;
+	background-color: rgb(168, 147, 138);
+	padding: 1%;
+	margin-top: 5%;
+}
+
+.labelr{
+	color: rgb(221, 207, 188);
+	font-weight: 1000;
+}
+
+.greetusr{
+	color: rgb(221, 207, 188);
+	text-align: center;
+}
+
+body{
+	background-color: rgb(52, 46, 77);
+	height: 100%;
+	position: relative;
+	width: 100%;
+	padding: 70px 0;
+	  text-align: center;
+
+}
+
+
+
+
+
