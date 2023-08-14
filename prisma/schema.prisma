@@ -1,0 +1,26 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+model User {
+  id Int @id @default(autoincrement())
+}
+
+
+
+//model Journal {
+//  id  User? @relation(fields: [Userid], references: [id])
+//  Userid Int @unique
+//  created_at DateTime
+//  topic String
+//  body String
+
+//}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
