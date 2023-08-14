@@ -5,6 +5,9 @@
 
 <h1 class="font-bold  p-8 text-2xl  text-red-50">What AI Evaluation will look like after we buy all FAANG companies</h1>
 
+<a href="/" class="text-green-700 bg-emerald-300 m-2 rounded-xl font-bold font-mono p-4 shadow-2xl " > BACK TO DASHBOARD </a>
+
+
 <div class="">
     <div class="bg-emerald-900 m-5 p-5 text-red-50 rounded-lg shadow-2xl">
         <h3 class="font-bold">August 13, 2023: 10:15 am</h3>
