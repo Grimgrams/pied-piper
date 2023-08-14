@@ -13,7 +13,7 @@ after converting to sveltekit
 
 # Listen
 When creating a new page with a link to another do THIS
-* create the directory name in routes
+* create the page name in routes
 * add +page.svelte file in the respected folder
 * go to src/lib/index.ts and add `export const <name_for_link> = 'path_in_routes'`
 * import it on the svelte file you need the link on `import { name_for_link } from '$lib'`
