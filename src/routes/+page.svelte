@@ -17,7 +17,7 @@
     </h1>
  
 
-    <a href="/aipage" class="text-green-700 bg-emerald-300 m-2 rounded-xl font-bold font-mono p-4 shadow-2xl " >AI HEALTH EVALUATION -> </a>
+    <a href="/evaluate" class="text-green-700 bg-emerald-300 m-2 rounded-xl font-bold font-mono p-4 shadow-2xl " >AI HEALTH EVALUATION -> </a>
 
 
     <div class="flexy">
