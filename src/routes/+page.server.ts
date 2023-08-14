@@ -27,6 +27,26 @@ export const actions: Actions = {
             status: 201
         }
     },
+    addResponse: async ({ request }) => {
+        const { id, response, entry } = Object.fromEntries(await request.formData()) as unknown as {
+            id: number ,response: string, entry: string
+        }
+        try {
+            await prisma.response.create({
+                data: {
+                    id,
+                    response,
+                    entry
+                }
+            })
+        } catch (err){
+            console.log(err)
+            return fail(500, {message: 'could not upload response and prompt'})
+        }
+        return {
+            status: 201
+        }
+    },
     removeEntry: async ({ url }) => {
         const id = url.searchParams.get("id")
     if (!id){

@@ -12,10 +12,10 @@
 </h1>
 
 <div class="p-15 grid">
-    <!--
-    <div class="">
+
+    <div class="" data-sveltekit-preload-data="false">
         <h2>Journal Entries</h2>
-        {#each journals as journal}
+        {#each journal as journal}
         <article>
             <header>{journal.topic}</header>
             <p>{journal.body}</p>
@@ -25,7 +25,7 @@
         </article>
             {/each}
     </div>
-    -->
+
     <form action="?/addEntry" method="POST">
         <h3>New Entry</h3>
         <input class=""  name="topic" placeholder="Topic..." autocomplete="off" />
@@ -33,6 +33,7 @@
         <button type="submit">Add Entry</button>
 
     </form>
+    <a href="/progress">Progress</a>
 </div>
 
 

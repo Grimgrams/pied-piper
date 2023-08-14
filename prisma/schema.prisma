@@ -13,7 +13,6 @@ model journal {
   created_at DateTime @default(now()) @db.Timestamptz(6)
   body       String?
   topic      String?
-  users      users    @relation(fields: [id], references: [id], onDelete: NoAction, onUpdate: NoAction)
 }
 
 /// This model contains row level security and requires additional setup for migrations. Visit https://pris.ly/d/row-level-security for more info.
@@ -22,5 +21,12 @@ model users {
   created_at DateTime @default(now()) @db.Timestamptz(6)
   name       String?  @db.VarChar
   email      String?  @db.VarChar
-  journal    journal?
+}
+
+/// This model contains row level security and requires additional setup for migrations. Visit https://pris.ly/d/row-level-security for more info.
+model response {
+  id         BigInt   @id @default(autoincrement())
+  created_at DateTime @default(now()) @db.Timestamptz(6)
+  response   String?  @db.VarChar
+  entry      String?  @db.VarChar
 }
