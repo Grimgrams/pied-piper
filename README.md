@@ -1,4 +1,4 @@
-# Pied Piper
+# Pied Journal
  A project for a recess hack hackathon  
 
 ## To Run
