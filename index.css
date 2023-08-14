@@ -12,12 +12,13 @@
 
 .labelr{
 	color: rgb(221, 207, 188);
-	font-weight: 1000;
+	font-weight: 100%;
 }
 
 .greetusr{
 	color: rgb(221, 207, 188);
 	text-align: center;
+	font-weight: bolder;
 }
 
 body{
