@@ -12,6 +12,11 @@
   <form class="entry">
     <label class="entrylabel"for="entry">New Entry: </label><br>
     <textarea class="maintype" rows="4" cols="50" ></textarea>
+
+    
+    <div class="submitentry" ><input  type="button" value="Submit"></div>
+
+
   </form>
 
 
