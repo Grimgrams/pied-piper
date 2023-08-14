@@ -2,19 +2,20 @@
 // learn more about it in the docs: https://pris.ly/d/prisma-schema
 
 model User {
-  id Int @id @default(autoincrement())
+  id        Int      @id @default(autoincrement())
+  createdAt DateTime
+  name      String
+  email     String   @unique
+  Journal   Journal?
 }
 
-
-
-//model Journal {
-//  id  User? @relation(fields: [Userid], references: [id])
-//  Userid Int @unique
-//  created_at DateTime
-//  topic String
-//  body String
-
-//}
+model Journal {
+  id         User?    @relation(fields: [Userid], references: [id])
+  Userid     Int      @unique
+  created_at DateTime
+  topic      String
+  body       String
+}
 
 generator client {
   provider = "prisma-client-js"
