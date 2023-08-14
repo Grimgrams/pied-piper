@@ -2,6 +2,9 @@
   import svelteLogo from './assets/svelte.svg'
   import viteLogo from '/vite.svg'
   import Counter from './lib/Counter.svelte'
+  /* these are just here so i don't forget
+  import { PrismaClient } from '@prisma/client'
+  const prisma = new PrismaClient()*/
 </script>
 
 <main>
