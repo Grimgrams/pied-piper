@@ -15,4 +15,4 @@ npm run dev
 
 ## Where is the AI?
 Unfortunately, we did not implement the AI into this project properly due to the time constraints of the hackathon.
-We had everything set but did not get past some errors.
+We had everything set but did not get past some errors!
